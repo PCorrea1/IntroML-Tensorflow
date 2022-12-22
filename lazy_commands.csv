@@ -1,0 +1,4 @@
+from google.colab import drive drive.mount('/content/drive')   -- mount google drive
+cd drive/MyDrive/Github/IntroML-Tensorflow                     -- quick folder shortcut
+git config --global user.email ""                              -- email shortcut
+git commit -m "more"                                           -- speed purposes
