@@ -1,0 +1,51 @@
+##128 neurons in the dense function
+Epoch 1/5
+1875/1875 [==============================] - 5s 2ms/step - loss: 0.4982 - accuracy: 0.8242
+Epoch 2/5
+1875/1875 [==============================] - 4s 2ms/step - loss: 0.3745 - accuracy: 0.8649
+Epoch 3/5
+1875/1875 [==============================] - 4s 2ms/step - loss: 0.3382 - accuracy: 0.8765
+Epoch 4/5
+1875/1875 [==============================] - 4s 2ms/step - loss: 0.3168 - accuracy: 0.8844
+Epoch 5/5
+1875/1875 [==============================] - 4s 2ms/step - loss: 0.2971 - accuracy: 0.8896
+313/313 [==============================] - 1s 2ms/step - loss: 0.3578 - accuracy: 0.8702
+
+[0.35779792070388794, 0.870199978351593]
+
+##512 neurons in the dense function
+Epoch 1/5
+1875/1875 [==============================] - 9s 5ms/step - loss: 0.4741 - accuracy: 0.8311
+Epoch 2/5
+1875/1875 [==============================] - 8s 4ms/step - loss: 0.3573 - accuracy: 0.8692
+Epoch 3/5
+1875/1875 [==============================] - 8s 4ms/step - loss: 0.3195 - accuracy: 0.8824
+Epoch 4/5
+1875/1875 [==============================] - 9s 5ms/step - loss: 0.2968 - accuracy: 0.8901
+Epoch 5/5
+1875/1875 [==============================] - 9s 5ms/step - loss: 0.2787 - accuracy: 0.8958
+313/313 [==============================] - 1s 3ms/step - loss: 0.3313 - accuracy: 0.8796
+
+[0.3312942385673523, 0.8795999884605408]
+
+##1024 neurons in the dense function
+Epoch 1/5
+1875/1875 [==============================] - 15s 8ms/step - loss: 0.4712 - accuracy: 0.8308
+Epoch 2/5
+1875/1875 [==============================] - 15s 8ms/step - loss: 0.3569 - accuracy: 0.8702
+Epoch 3/5
+1875/1875 [==============================] - 16s 8ms/step - loss: 0.3221 - accuracy: 0.8806
+Epoch 4/5
+1875/1875 [==============================] - 15s 8ms/step - loss: 0.2958 - accuracy: 0.8923
+Epoch 5/5
+1875/1875 [==============================] - 14s 8ms/step - loss: 0.2778 - accuracy: 0.8976
+313/313 [==============================] - 1s 4ms/step - loss: 0.3595 - accuracy: 0.8721
+
+[0.35949641466140747, 0.8720999956130981]
+
+As can be seen in the results above, increasing the neurons can decrease our loss and increase our accuracy in some 
+cases (see going from 128->512 neurons)
+
+In some cases however, we do hit the wall of diminishing results (going from 512->1024 neurons). The loss actually increases
+and the accuracy slightly decreases, although more calculations were done. (More neurons mean more calculations, which
+leads to more total time)
