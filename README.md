@@ -21,3 +21,6 @@ This is usually Mean Squared Error (MSE) as David Maust said above, or often in 
 
 Removing the Flatten function will result in an error about the shape of the data. n layers of n neurons is not feasible, so it makes more sense to "flatten"
 the n,n images to a n*n x 1 (ex: 28 x 28 will be flattened into a 784 x 1)
+
+When looking at the second Dense function, the first number is the number of neurons in the last layer. This number needs to match up with the number of classes
+that you are classifying for. (in first.ipynb, we have 10 neurons in the final layer)
